@@ -1,0 +1,168 @@
+
+Evaluating logistic model:
+
+Training Set Performance:
+Accuracy: 0.9433333333333334
+
+Validation Set Performance:
+Accuracy: 0.701
+Confusion Matrix:
+ [[  5   0   0   4   3]
+ [  0   2   0   7   6]
+ [  0   0   5  17  20]
+ [  0   0   1 118 117]
+ [  0   0   0 124 571]]
+Classification Report:
+               precision    recall  f1-score   support
+
+           1       1.00      0.42      0.59        12
+           2       1.00      0.13      0.24        15
+           3       0.83      0.12      0.21        42
+           4       0.44      0.50      0.47       236
+           5       0.80      0.82      0.81       695
+
+    accuracy                           0.70      1000
+   macro avg       0.81      0.40      0.46      1000
+weighted avg       0.72      0.70      0.69      1000
+
+
+Test Set Performance:
+Accuracy: 0.701
+Confusion Matrix:
+ [[  2   0   0   4   8]
+ [  0   1   0   3   9]
+ [  0   0   8  16  17]
+ [  0   0   1 108 115]
+ [  0   0   0 126 582]]
+Classification Report:
+               precision    recall  f1-score   support
+
+           1       1.00      0.14      0.25        14
+           2       1.00      0.08      0.14        13
+           3       0.89      0.20      0.32        41
+           4       0.42      0.48      0.45       224
+           5       0.80      0.82      0.81       708
+
+    accuracy                           0.70      1000
+   macro avg       0.82      0.34      0.39      1000
+weighted avg       0.72      0.70      0.69      1000
+
+
+Evaluating svm model:
+
+Training Set Performance:
+Accuracy: 0.9333333333333333
+
+Validation Set Performance:
+Accuracy: 0.69
+Confusion Matrix:
+ [[  5   0   0   4   3]
+ [  0   2   0   8   5]
+ [  0   0   4  18  20]
+ [  0   0   0 123 113]
+ [  0   0   0 139 556]]
+Classification Report:
+               precision    recall  f1-score   support
+
+           1       1.00      0.42      0.59        12
+           2       1.00      0.13      0.24        15
+           3       1.00      0.10      0.17        42
+           4       0.42      0.52      0.47       236
+           5       0.80      0.80      0.80       695
+
+    accuracy                           0.69      1000
+   macro avg       0.84      0.39      0.45      1000
+weighted avg       0.72      0.69      0.68      1000
+
+
+Test Set Performance:
+Accuracy: 0.689
+Confusion Matrix:
+ [[  2   0   0   5   7]
+ [  0   1   0   3   9]
+ [  0   0   8  16  17]
+ [  0   0   1 109 114]
+ [  0   0   0 139 569]]
+Classification Report:
+               precision    recall  f1-score   support
+
+           1       1.00      0.14      0.25        14
+           2       1.00      0.08      0.14        13
+           3       0.89      0.20      0.32        41
+           4       0.40      0.49      0.44       224
+           5       0.79      0.80      0.80       708
+
+    accuracy                           0.69      1000
+   macro avg       0.82      0.34      0.39      1000
+weighted avg       0.72      0.69      0.68      1000
+
+
+Evaluating naive_bayes model:
+
+Training Set Performance:
+Accuracy: 0.7033333333333334
+
+Validation Set Performance:
+Accuracy: 0.696
+Confusion Matrix:
+ [[  0   0   0   0  12]
+ [  0   0   0   0  15]
+ [  0   0   0   0  42]
+ [  0   0   0   1 235]
+ [  0   0   0   0 695]]
+Classification Report:
+               precision    recall  f1-score   support
+
+           1       1.00      0.00      0.00        12
+           2       1.00      0.00      0.00        15
+           3       1.00      0.00      0.00        42
+           4       1.00      0.00      0.01       236
+           5       0.70      1.00      0.82       695
+
+    accuracy                           0.70      1000
+   macro avg       0.94      0.20      0.17      1000
+weighted avg       0.79      0.70      0.57      1000
+
+
+Test Set Performance:
+Accuracy: 0.71
+Confusion Matrix:
+ [[  0   0   0   0  14]
+ [  0   0   0   0  13]
+ [  0   0   0   0  41]
+ [  0   0   0   2 222]
+ [  0   0   0   0 708]]
+Classification Report:
+               precision    recall  f1-score   support
+
+           1       1.00      0.00      0.00        14
+           2       1.00      0.00      0.00        13
+           3       1.00      0.00      0.00        41
+           4       1.00      0.01      0.02       224
+           5       0.71      1.00      0.83       708
+
+    accuracy                           0.71      1000
+   macro avg       0.94      0.20      0.17      1000
+weighted avg       0.79      0.71      0.59      1000
+
+
+### Qualitative Analysis ###
+
+
+### Correctly Classified Examples ###
+                                                                 Review  Actual  Predicted
+                           works great easy use fast great whole family       5          5
+         purchased gift mother amazon fanatic loves made christmas year       5          5
+  problem tablet dont internet lose pictures games installed guess open       4          4
+           addition systemlove talking seeing bff atlsuits office decor       5          5
+would highly recommend kindle user friendly big large enough see easily       5          5
+
+### Incorrectly Classified Examples ###
+                                                                                                                         Review  Actual  Predicted
+                                                                                              tablet easy use navigate internet       5          4
+                                                                 fun use also easy kids use well good tablet books games family       5          4
+                      much sleeker touch response better even wifi connection seems faster might due new processor increase ram       5          4
+purchased father law frustrating experience user friendly friendly stick name brand tablet apple samsung etc avoid device costs       1          4
+                                                                          dont recommend buying 1 month buying wont charge turn       1          5
+
+Experiment Complete!
